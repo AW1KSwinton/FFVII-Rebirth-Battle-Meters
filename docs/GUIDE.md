@@ -88,7 +88,7 @@ Edit `BattleMeters\Scripts\config.lua`, then restart the game:
 | `rolling_window_seconds` | 5 | The window for the "Last 5 seconds" line |
 | `write_json` | `true` | Also writes `meters.json` next to the mod, useful for stream overlays |
 
-## Good to know
+## Known limits
 
 - **Numbers are read five times a second.** Two hits landing in the same fifth of a second count as one for "Biggest hit". Totals
   aren't affected.

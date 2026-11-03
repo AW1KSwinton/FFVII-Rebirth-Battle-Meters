@@ -124,7 +124,8 @@ in this game before this mod existed, and we still don't know the cause. After a
 ## Known limits
 
 Numbers are read five times a second, so hits landing together count as one for the biggest hit. Everything an enemy loses counts as damage, whatever caused it. Boss fights haven't been tested.
-Healing shows who received it, not who cast it. The full list is in the reference guide.
+Healing shows who received it, not who cast it. Any rise in HP counts as healing, including potions, Regen, HP Absorb and abilities that heal without MP, while overhealing adds nothing. MP spent is every MP the party spends, on any spell, so healing per MP
+only shows true healing efficiency if healing is all you spend MP on. And damage and healing on the same character within the same fifth of a second cancel out, so both can read slightly low in busy moments. The full list is in the reference guide.
 
 ## Build on this
 

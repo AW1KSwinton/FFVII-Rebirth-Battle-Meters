@@ -36,6 +36,15 @@ It starts switched off, so nothing shows until you press the key.
 It works alongside [Training Dummy](https://github.com/AW1KSwinton/FFVII-Rebirth-Training-Dummy): on that mod's courses, only
 its panel shows.
 
+## Known limits
+
+- Any rise in HP counts as healing, including potions, Regen, HP Absorb and abilities that heal without MP. Overhealing adds nothing.
+- MP spent is every MP the party spends, on any spell, so healing per MP only shows true healing efficiency if healing is all you spend MP on.
+- Damage and healing on the same character within the same fifth of a second cancel out, so HPS and DTPS can read slightly low in busy moments.
+- Boss fights haven't been tested.
+
+The full list is in the [guide](docs/GUIDE.md#known-limits).
+
 ## Tests
 
 `python -m pip install lupa`, then `python tests/run_tests.py`.

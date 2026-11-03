@@ -113,7 +113,12 @@ In the real game, on 2026-11-03, on a Level 17 save.
 ## Limits
 
 - **Reads every 200 ms.** Hits within the same read count as one for "Biggest hit". Totals aren't affected.
-- **All HP changes count**, whatever caused them. Revives, potions and any refill from the game count as healing.
+- **All HP changes count**, whatever caused them. Revives, potions, Regen ticks, HP Absorb, abilities that heal without MP and any refill from the game count as healing.
+  Only HP actually gained is counted, so overhealing adds nothing. These follow from how the mod reads HP: Regen, HP Absorb and MP-free heals weren't tested one by one.
+- **MP spent is all the party's MP,** on any spell. MP gained isn't subtracted. Healing per MP is all healing divided by all of that MP, so offensive spells lower it and
+  MP-free healing raises it. It only shows true healing efficiency if healing is all the party spends MP on.
+- **Changes within one read net out.** A character who takes 100 and gets 300 healing in the same 200 ms records 200 healing and no damage taken, so HPS and DTPS can both
+  read slightly low in busy moments. MP nets out the same way.
 - **Game time:** it stops when paused and runs slower when the game slows down. A 142 s fight showed as 85 s.
 - **A fight's first second:** outside a fight the mod checks once a second, so up to a second of the start can be missed.
 - **The last enemy:** one killed in one blow from above half HP doesn't have that blow counted. Running away is untested: enemies still
