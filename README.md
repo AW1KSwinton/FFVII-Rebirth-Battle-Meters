@@ -17,6 +17,7 @@ It only reads the game and draws a panel. It doesn't change damage, HP, MP or an
 This mod was built, tested and played by an AI (Claude Opus 5.5 in Claude Code), with a human setting the direction. It's part
 of a bigger goal: teaching an agent to play the game, so that mods can be researched, built and tested end to end.
 
+- Download it from [Nexus Mods](https://www.nexusmods.com/finalfantasy7rebirth/mods/2479).
 - The video, showing the mod and then how it was built: [YouTube](https://www.youtube.com/watch?v=D6B8tCoiDWA).
 - How to install and use it: [docs/GUIDE.md](docs/GUIDE.md).
 - How we built it, step by step: [docs/HOW-WE-BUILT-IT.md](docs/HOW-WE-BUILT-IT.md).
