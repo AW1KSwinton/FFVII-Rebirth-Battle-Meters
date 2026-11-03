@@ -93,7 +93,12 @@ Edit `BattleMeters\Scripts\config.lua`, then restart the game:
 - **Numbers are read five times a second.** Two hits landing in the same fifth of a second count as one for "Biggest hit". Totals
   aren't affected.
 - **Everything an enemy loses counts as your damage**, whatever caused it, and any party member's HP rising counts as healing,
-  including potions, revives and any refill the game gives you.
+  including potions, revives, Regen ticks, HP Absorb, abilities that heal without MP and any refill the game gives you. Only HP actually
+  gained counts, so overhealing adds nothing.
+- **MP spent is every MP the party spends,** on any spell, not just on healing. Healing per MP divides all healing by all of that MP, so
+  casting Fire lowers it, and healing that costs no MP raises it. It only shows true healing efficiency if healing is all you spend MP on.
+- **Changes in the same reading cancel out.** If someone takes 100 damage and gets 300 healing within the same fifth of a second, that
+  shows as 200 healing and no damage taken, so HPS and DTPS can both read slightly low in busy moments. MP works the same way.
 - **Time is game time.** It stops while paused and runs slower while the game slows down, so a meter's time can be well below the
   real time. In one of our fights, 142 real seconds showed as 85.
 - **The last enemy's final hit:** the battle can end before its last HP is read. That HP is added if the enemy was at half HP or less

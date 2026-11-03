@@ -99,7 +99,10 @@ looks for the subtitle on screen, and tries after six seconds. When it isn't off
 ## Step 8: the crash
 
 Partway through, the game crashed while loading a save. The AI had just changed the telemetry to scan for scenes every two seconds while Cloud was held, and a load holds him too. It was the first
-crash since the day before. The evidence was only circumstantial, but the scan hadn't even helped, so it was removed. There have been no crashes since.
+crash since the day before. The evidence was only circumstantial, but the scan hadn't even helped, so it was removed, and that crash hasn't come back.
+
+Later, while we were recording the final fights, one load never finished. The game was still running, with the spinner turning, and the AI's script carried on pressing keys without noticing that the load had failed. The owner spotted it. We've seen the same hang
+in this game before this mod existed, and we still don't know the cause. After a restart, the same save loaded in thirty seconds. The script now checks each load before it does anything else.
 
 ## What we found the hard way
 
