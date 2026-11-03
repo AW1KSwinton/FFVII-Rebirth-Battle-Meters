@@ -1,0 +1,4 @@
+build/
+tools/build-config.local.json
+ue4ss/BattleMeters/settings.txt
+ue4ss/BattleMeters/meters.json*
