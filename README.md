@@ -35,7 +35,7 @@ Or, from this repository: `tools/Install-BattleMeters.ps1 -Mode Install -GameRoo
 
 It starts switched off, so nothing shows until you press the key.
 
-It works alongside [Training Dummy](https://github.com/AW1KSwinton/FFVII-Rebirth-Training-Dummy): on that mod's courses, only
+It works alongside [Training Dummy](https://github.com/CaitGPT/FFVII-Rebirth-Training-Dummy): on that mod's courses, only
 its panel shows.
 
 ## Known limits
